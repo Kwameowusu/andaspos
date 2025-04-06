@@ -1,0 +1,32 @@
+.root {
+  max-width: 1660px;
+  width: 100%;
+  /* overflow: hidden; */
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  min-height: 100dvh;
+  margin: 0 550px 0 0px;
+  /* overflow: hidden; */
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    margin: 0 0 0 0%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 0 0 0 0%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    margin: 0 0 0 0;
+  }
+}

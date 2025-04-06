@@ -1,0 +1,33 @@
+.container {
+  border-radius: var(--okw-border-radius-sm);
+  width: 100%;
+  margin-top: 70px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  gap: 5px;
+  color: var(--okw-deeep-text-color);
+}
+
+.greeting {
+  color: var(--okw-dark-text-color1);
+  margin: 0;
+  font-size: var(--okw-font-size-24);
+}
+
+.description{
+  font-size: var(--okw-font-size-14);
+  color: var(--okw-light-text-color);
+}
+
+
+/* Responsive table */
+@media (max-width: 768px) {
+  .table {
+    display: block;
+    overflow-x: auto;
+  }
+}

@@ -1,0 +1,90 @@
+.themeGreen {
+  --okw-button-light-accent-color1: var(--okw-blue-light-accent-color1);
+  --okw-button-light-accent-color2: var(--okw-blue-light-accent-color2);
+  --okw-button-accent-color: var(--okw-brand-color-green);
+}
+
+.themeDanger {
+  --okw-button-light-accent-color1: var(--okw-danger-light-accent-color1);
+  --okw-button-light-accent-color2: var(--okw-danger-light-accent-color2);
+  --okw-button-accent-color: var(--okw-danger-color);
+}
+
+.themeGrey {
+  --okw-button-light-accent-color1: var(--okw-color-grey5);
+  --okw-button-light-accent-color2: var(--okw-color-grey6);
+  --okw-button-accent-color: var(--okw-color-grey10);
+}
+
+.root {
+  width: fit-content;
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid var(--okw-lighter-border-color);
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  /* padding-left: 18px; */
+  /* padding-right: 18px; */
+  height: 50px;
+}
+
+.root label {
+  color: var(--okw-deep-text-color);
+  font-weight: 600;
+  font-size: var(--okw-font-size-14);
+}
+
+.root input {
+  height: 100%;
+  width: 94%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--okw-deep-text-color);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-size: var(--okw-font-size-14);
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  -webkit-user-select: text
+}
+
+.root input::-webkit-input-placeholder {
+  color: var(--okw-light-text-color);
+  font-size: var(--okw-font-size-14);
+}
+
+.root input {
+  /* padding-top: 30px; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+  /* overflow: visible !important; */
+}
+
+.root input[type="datetime-local"]:not(.has-value):before {
+  color: var(--okw-light-text-color);
+  content: attr(placeholder);
+  /* position: absolute; */
+  /* top: -10px; */
+  /* background: white; */
+  /* padding-left: 5px;
+  padding-right: 5px; */
+}
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-width: thin;
+  opacity: 0;
+}

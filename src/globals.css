@@ -1,0 +1,337 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* margin: 0;
+  padding: 0; */
+  font-family: "Poppins", sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
+}
+
+::-webkit-scrollbar {
+  /* width: 15px; */
+}
+
+::-webkit-scrollbar-track {
+  /* background: transparent; */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--okw-brand-color-red);
+  border-radius: 20px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+:root {
+
+  /* Colors */
+  --okw-brand-color-green: #B7D131;
+  --okw-brand-color-red: #C02726;
+  --okw-brand-color-blue: #06449c;
+
+  /* dark colors*/
+  --okw-dark-text-color1: #373737;
+  --okw-dark-text-color2: #4a5568;
+
+  /* Light colors*/
+  --okw-light-text-color1: #ffffff;
+  --okw-light-text-color2: #c1c1c1;
+
+  /* dark colors*/
+  --okw-dark-border-color1: #373737;
+  --okw-dark-border-color2: #979797;
+
+  /* Light colors*/
+  --okw-light-border-color1: #ffffff;
+  --okw-light-border-color2: #c1c1c1;
+
+  /* Danger */
+  --okw-danger-color: #ef3838;
+  --okw-danger-light-accent-color2: #ffb3b3;
+  --okw-danger-light-accent-color3: #ffa3a3;
+  --okw-danger-light-accent-color4: #fff2f2;
+  --okw-danger-light-accent-color5: #fff8f8;
+
+  /*sizes */
+  --okw-font-size-10: 10px;
+  --okw-font-size-12: 12px;
+  --okw-font-size-14: 14px;
+  --okw-font-size-16: 16px;
+  --okw-font-size-18: 18px;
+  --okw-font-size-20: 20px;
+  --okw-font-size-22: 22px;
+  --okw-font-size-24: 24px;
+
+  /* Border sizes */
+  --okw-border-radius-lg: 30px;
+  --okw-border-radius-md: 20px;
+  --okw-border-radius-sm: 10px;
+  --okw-border-radius-vsm: 5px;
+  --okw-border-radius-rd: 50%;
+
+  --okw-input-height: 40px;
+  --okw-buttons-width: 40px;
+
+  --ripple-opacity: 0.9;
+  --ripple-duration: 700ms;
+
+}
+
+
+
+[data-theme="light"] {
+
+  --okw-bg-color: #eff6f9;
+  --okw-cover-bg-color: #ffffff;
+  --okw-lighter-cover-bg-color: #DFDDF9;
+  --okw-more-bg-color: #F8F8F8;
+  --okw-vmore-bg-color: #FBFBFB;
+
+  --okw-bg-opacity1: #fffffff4;
+  --okw-bg-opacity2: hwb(0 100% 0% / 0.821);
+  --okw-bg-opacity3: #ffffff7a;
+  --okw-bg-opacity4: hsla(0, 1%, 21%, 0.688);
+  --okw-bg-opacity5: hsla(0, 0%, 100%, 0.786);
+
+  --okw-icon-color: rgb(80, 80, 80);
+  --okw-deep-text-color: rgb(30, 31, 29);
+  --okw-inverse-deep-text-color: rgb(243, 243, 243);
+  --okw-light-text-color: #6c6c6c;
+  --okw-lighter-text-color: rgb(188, 188, 188);
+  --okw-deep-border-color: rgb(10, 10, 10);
+  --okw-light-border-color: rgb(135, 135, 135);
+  --okw-lighter-border-color: rgb(229, 229, 229);
+  --okw-vlighter-border-color: #EEEEEE;
+
+  --okw-olighter-border-color: transparent;
+
+  --ripple-bg-brand-color: #00aeffc7;
+  --ripple-bg-caution-color: #ff2222;
+  --okw-login-card-bg-color: #ffffff52;
+  /* background-color: #ffffff; */
+  --ripple-button-bg-brand-color: #afe2f9c7;
+
+
+  /* Black */
+  --okw-blue-accent-color: #F5720A;
+  --okw-blue-light-accent-color2: #ffbc86;
+  --okw-blue-light-accent-color3: hsla(27, 92%, 50%, 0.244);
+  --okw-blue-light-accent-color4: #e2640017;
+
+  /* Green */
+  --okw-green-accent-color: #008020;
+  --okw-green-light-accent-color2: #e2ffca96;
+  --okw-green-light-accent-color3: #e3fffe;
+  --okw-green-light-accent-color4: #cffdf8;
+
+  /* Grey */
+  --okw-grey-color: #EAEAEA;
+  --okw-grey-light-accent-color2: #545454;
+  --okw-grey-light-accent-color3: #7f7f7f;
+  --okw-grey-light-accent-color4: #2525251a;
+  --okw-grey-light-accent-color5: #f5f5f5;
+
+  --okw-log-bg-color: white;
+  --okw-log-reaction-bg-color: rgb(245, 245, 245);
+  --okw-log-reaction-like-color: #D2A400;
+  --okw-modal-bg-color: hsla(0, 0%, 91%, 0.741);
+  --okw-modal-bg-color1: hsl(0, 0%, 91%);
+  --okw-modal-box-shadow: -3px 2px 32px 14px rgba(73, 73, 73, 0.07);
+  --okw-bottomnav-box-shadow: 0 4px 43px 0 rgba(94, 92, 92, .25);
+  --okw-filterbutton-bg-color: hsla(0, 0%, 87%, 0.47);
+  --okw-TransactionCard-box-shadow: 1px 1px 1px 1px rgba(16, 16, 16, 0.438);
+  --okw-log-background: linear-gradient(156.09deg, #FFFFED 3.21%, #D6D7FF 41.87%, rgba(45, 192, 202, 0) 102.17%);
+  --okw-lg-box-shadow: rgba(0, 0, 0, 0.1);
+
+  --okw-login-bg-opacity: rgba(240, 248, 255, 0.78);
+}
+
+[data-theme="dark"] {
+
+  --okw-bg-color: #0e0e0e;
+  --okw-cover-bg-color: #121512;
+  --okw-more-bg-color: #20242c;
+  --okw-vmore-bg-color: #282c35;
+
+
+  --okw-lighter-cover-bg-color: rgb(250, 250, 249);
+
+  --okw-bg-opacity1: #1617189f;
+  --okw-bg-opacity2: #3d3d3d70;
+  --okw-bg-opacity3: #16150dc9;
+  --okw-bg-opacity4: #202425e4;
+  --okw-bg-opacity5: #16150de8;
+
+  --okw-icon-color: rgb(80, 80, 80);
+  --okw-deep-text-color: rgb(236, 236, 236);
+  --okw-inverse-deep-text-color: rgb(20, 20, 20);
+  --okw-light-text-color: #828282;
+  --okw-lighter-text-color: rgb(188, 188, 188);
+  --okw-deep-border-color: rgb(10, 10, 10);
+  --okw-light-border-color: rgb(135, 135, 135);
+  --okw-lighter-border-color: rgb(35, 37, 37);
+  --okw-vlighter-border-color: #1c1c1c;
+
+  --okw-olighter-border-color: rgba(35, 37, 37, 0.29);
+
+  --ripple-bg-brand-color: #35ffe4;
+  --ripple-bg-caution-color: #ff2222;
+  --okw-login-card-bg-color: #ffffff52;
+  /* background-color: #16150D; */
+
+  --ripple-button-bg-brand-color: #076b00c7;
+
+  /* Black */
+  --okw-blue-accent-color: #F5720A;
+  --okw-blue-light-accent-color2: #ffbc86;
+  --okw-blue-light-accent-color3: #ffcfa9;
+  --okw-blue-light-accent-color4: #e2640017;
+
+  /* Green */
+  --okw-green-accent-color: var(--okw-brand-color-red);
+  --okw-green-light-accent-color2: #18ff2b5a;
+  --okw-green-light-accent-color3: #273f27;
+  --okw-green-light-accent-color4: #0b700d21;
+
+  /* Grey */
+  --okw-grey-color: #efefef;
+  --okw-grey-light-accent-color2: #545454;
+  --okw-grey-light-accent-color3: #7f7f7f;
+  --okw-grey-light-accent-color4: #7b7b7b37;
+  --okw-grey-light-accent-color5: #f5f5f5;
+
+  --okw-log-bg-color: #2C2920;
+  --okw-log-reaction-bg-color: #fff3e00f;
+  --okw-log-reaction-like-color: var(--okw-color-grey1);
+  --okw-modal-bg-color: rgba(48, 48, 41, 0.72);
+  --okw-modal-bg-color1: rgb(48, 48, 41);
+  --okw-border-color4: #494943;
+  --okw-modal-box-shadow: -3px 2px 32px 14px rgba(73, 73, 73, 0.07);
+  --okw-bottomnav-box-shadow: 0 4px 43px 0 rgba(37, 36, 32, 0.609);
+  --okw-filterbutton-bg-color: hsla(0, 0%, 68%, 0.197);
+  --okw-TransactionCard-box-shadow: 0.5px 0px 0px 1.5px rgba(16, 16, 16, 0.199);
+  --okw-log-background: rgb(0, 0, 0);
+  --okw-lg-box-shadow: #00000085;
+
+  --okw-login-bg-opacity: rgba(107, 107, 107, 0.698);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--okw-bg-color);
+  color: var(--okw-deep-text-color);
+}
+
+#nprogress {
+  top: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+#nprogress .bar {
+  position: fixed !important;
+  z-index: 1000000 !important;
+  height: 4px;
+  top: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--okw-brand-color-green);
+  background: linear-gradient(10deg,
+      var(--okw-brand-color-green),
+      var(--okw-brand-color-red),
+      var(--okw-brand-color-green));
+  background-size: 200% 200%;
+  animation: animateGlow 1s ease infinite;
+}
+
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+[effect=ripple] {
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+
+}
+
+[effect=ripple]::before {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  transform-origin: center;
+  top: calc(var(--top) * 1px);
+  left: calc(var(--left) * 1px);
+  width: calc(var(--diameter) * 1px);
+  height: calc(var(--diameter) * 1px);
+  background: var(--ripple-background, rgba(5, 5, 5, 0));
+  transform: translate(-50%, -50%) scale(var(--scale, 1));
+  opacity: calc(var(--opacity, 1) * var(--ripple-opacity, 0.5));
+  transition: calc(var(--time, 0) * var(--ripple-duration, 100ms)) var(--ripple-easing, linear);
+  z-index: 10;
+  /* border-radius: 50%; */
+}
+
+.reactjs-tiptap-editor {
+  border-radius: var(--okw-border-radius-sm) !important;
+}
+
+.richtext-outline-1 {
+  outline: none !important;
+  outline-width: 0 !important;
+}
+
+.reactjs-tiptap-editor.reactjs-tiptap-editor .ProseMirror.ProseMirror.ProseMirror {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  /* height: calc(100vh - 187px) !important; */
+}
+
+.richtext-shadow {
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / .1),
+    0 1px 2px -1px rgb(0 0 0 / .1) !important;
+}
+
+#tippy-74 {
+  max-width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .reactjs-tiptap-editor.reactjs-tiptap-editor .ProseMirror.ProseMirror.ProseMirror {
+
+    /* height: calc(100vh - 200px) !important; */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .root {}
+}
